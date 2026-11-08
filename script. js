@@ -1,0 +1,16 @@
+const startButton = document.getElementById("start-button");
+
+startButton.addEventListener("click", function () {
+    alert("Welcome! You are learning web development.");
+});
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    formStatus.textContent =
+        "Thank you! Your form has been checked successfully.";
+
+    contactForm.reset();
+});
